@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Battle 2.0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <video autoplay muted loop id="loaderVideo">
+      <source src="Assets/loader.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">FrontendBattle</div>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle" aria-label="Toggle light/dark mode">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero fade-in">
+    <video autoplay muted loop>
+      <source src="Assets/homepage.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h1>Frontend Battle 2.0</h1>
+      <p>Replicate. Innovate. Dominate.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features fade-in">
+    <h2>Advanced Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card"><video src="Assets/scroll and pop up.mp4" controls></video><h3>Scroll and Pop-up</h3></div>
+      <div class="feature-card"><video src="Assets/features-services.mp4" controls></video><h3>Services Overview</h3></div>
+      <div class="feature-card"><video src="Assets/parallax animation.mp4" controls></video><h3>Parallax</h3></div>
+      <div class="feature-card"><video src="Assets/ripple effect.mp4" controls></video><h3>Ripple Effect</h3></div>
+      <div class="feature-card"><video src="Assets/testimonials.mp4" controls></video><h3>Testimonials</h3></div>
+      <div class="feature-card"><video src="Assets/caraousel switch.mp4" controls></video><h3>Carousel</h3></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery fade-in">
+    <h2>Visual Gallery</h2>
+    <div class="image-grid">
+      <img src="Assets/cards.png" alt="Cards" />
+      <img src="Assets/graph.png" alt="Graph" />
+      <img src="Assets/stats.png" alt="Stats" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
